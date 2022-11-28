@@ -13,6 +13,7 @@
                     <input type="password" name="password" placeholder="hasło" class="filed">
                     <input type="submit" value="Zaloguj" class="bt-submit">
             </form>
+            <p class="having-account">Nie masz konta? <a href="{%url 'register_page'%}">Zarejestruj się </a></p>
             <div id="messages">                 
                 {%for i in error_list%}
                     <label>{{i}}</label>

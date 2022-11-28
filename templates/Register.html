@@ -16,6 +16,7 @@
                 <input type="password" name="password2" placeholder="powtórz hasło" class="filed">
                 <input type="submit" value="Zarejestruj" class="bt-submit">
             </form>
+            <p class="having-account">Masz juz konto? <a href="{%url 'login_page'%}">Zaloguj się </a></p>
             <div id="messages">                
                 {%for i in error_list%}
                     <label>{{i}}</label>

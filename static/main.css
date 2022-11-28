@@ -14,6 +14,9 @@ body{
     justify-content: center;
 }
 
+
+
+/*Register and login*/
 .form-content{
     position: relative;
     max-width: 430px;
@@ -61,3 +64,11 @@ body{
     margin-top: 10px;
     color: red;
 }
+
+.form .having-account{
+    margin-top: 10px;
+    text-decoration: none;
+    
+}
+
+/*welcome*/
