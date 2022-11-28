@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form method="post">
+        {%csrf_token%}
+        <input type="email" name="email" placeholder="email">
+        <input type="text" name="firstname" placeholder="imie">
+        <input type="text" name="lastname" placeholder="nazwisko">
+        <input type="password" name="password1" placeholder="hasło">
+        <input type="password" name="password2" placeholder="powtórz hasło">
+        <input  type="submit" value="Zarejestruj">
+    </form>
+</body>
+</html>
