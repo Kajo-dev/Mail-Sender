@@ -3,3 +3,4 @@ migrations
 .env.local
 Pipfile.lock
 Pipfile
+.DS_store
