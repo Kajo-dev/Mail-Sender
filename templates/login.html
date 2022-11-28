@@ -1,23 +1,24 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-</head>
+{% extends "base.html" %}
+  
+{%block title%}<title>Kajo-mail Logowanie</title>{%endblock title%}
+</head> 
+{% block content %}
 <body>
-    <form method="POST"> 
-        {%csrf_token%}
-            <input type="email" name="email" placeholder="e-mail">
-            <input type="password" name="password" placeholder="hasło">
-            <input  type="submit" value="Zaloguj">
-    </form>
-    <div id="messages">  
-                
-        {%for i in error_list%}
-            <label>{{i}}</label>
-        {%endfor%}
-
+    <div class="form-content">
+        <div class="form">
+            <span class="title">Logowanie</span>
+            <form method="POST"> 
+                {%csrf_token%}
+                    <input type="email" name="email" placeholder="e-mail" class="filed">
+                    <input type="password" name="password" placeholder="hasło" class="filed">
+                    <input type="submit" value="Zaloguj" class="bt-submit">
+            </form>
+            <div id="messages">                 
+                {%for i in error_list%}
+                    <label>{{i}}</label>
+                {%endfor%}
+            </div>
+        </div>
     </div>
 </body>
+{% endblock content %}

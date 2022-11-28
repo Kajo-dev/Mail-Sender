@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Reem Kufi', sans-serif;
+
+}
+
+body{
+    background-color: #11111f;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-content{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-content .form{
+    padding: 30px;
+}
+
+.form-content .form .title{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.form .filed{
+    margin-top: 27px;
+    width: 100%; 
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+}
+
+.form .filed:hover {
+    border-bottom: 2px solid rgb(149, 28, 205);
+}
+
+.form .bt-submit{
+    margin-top: 10px;
+    font-size: 30px;
+    max-width: 400px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+.form .bt-submit:hover{
+    border-bottom: 2px solid rgb(149, 28, 205);
+}
+
+.form #messages{
+    margin-top: 10px;
+    color: red;
+}
